@@ -1,17 +1,18 @@
 #control flow with if, elif and else
 #loops: while, for
+#if statment
 
-# if statment
-# weather = "rain"
-#
-# if weather == "sunny": #if the boolean value = true then run next line of code
-#     print("Enjoy the weather")
-# elif weather == "rain":
-#     print("Bring an umbrella, its raining")
-# elif weather == "cloudy":
-#     print("No sun, but lucky no rain yet")
-# else:
-#     print("Something went wrong")
+
+weather = "rain"
+
+if weather == "sunny": #if the boolean value = true then run next line of code
+    print("Enjoy the weather")
+elif weather == "rain":
+    print("Bring an umbrella, its raining")
+elif weather == "cloudy":
+    print("No sun, but lucky no rain yet")
+else:
+    print("Something went wrong")
 
 
 list_data = [1,2,3,4,5,6]
@@ -42,3 +43,15 @@ for data in student_1.values():
     if data == "Cyber Security":
         break
     print(data)
+
+
+user_prompt = True
+
+while user_prompt:
+    age = input("Please enter your age")
+    if age.isdigit():
+        user_prompt = False
+    else:
+        print("Please provide you answer in digits")
+    print(f"Your age is {age}")
+
