@@ -1,6 +1,6 @@
 movie_ratings = {
 
-    "universal" : "everyone can watch",
+    "u" : "everyone can watch",
   "pg" : "General viewing, but some scenes may be unsuitable for young children",
   "12" : "Films classified 12A and video works classified 12 contain material that is not generally suitable for children aged under 12. No one younger than 12 may see a 12A film in a cinema unless accompanied by an adult.",
   "15" : "No one younger than 15 may see a 15 film in a cinema.",
@@ -12,8 +12,8 @@ def User_Check(Age):
 
     if User_rating == "exit":
         return False
-    elif User_rating == "universal":
-        print(movie_ratings[ "universal" ])
+    elif User_rating == "u":
+        print(movie_ratings["u"])
         return True
     elif User_rating == "pg":
         print(movie_ratings["pg"])
